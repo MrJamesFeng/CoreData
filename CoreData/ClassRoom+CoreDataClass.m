@@ -7,9 +7,9 @@
 //
 
 #import "ClassRoom+CoreDataClass.h"
-#import "Headmaster.h"
-#import "Student.h"
-#import "Teacher.h"
+#import "Headmaster+CoreDataClass.h"
+#import "Student+CoreDataClass.h"
+#import "Teacher+CoreDataClass.h"
 @implementation ClassRoom
 
 @end

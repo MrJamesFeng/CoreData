@@ -7,7 +7,7 @@
 //
 
 #import "Teacher+CoreDataClass.h"
-#import "ClassRoom.h"
+#import "ClassRoom+CoreDataProperties.h"
 @implementation Teacher
 
 @end

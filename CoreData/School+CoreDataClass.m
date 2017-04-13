@@ -7,7 +7,7 @@
 //
 
 #import "School+CoreDataClass.h"
-#import "Grades.h"
+#import "Grades+CoreDataClass.h"
 @implementation School
 
 @end
