@@ -7,16 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B425F971E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B425F961E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive */; };
+		0B425F981E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B425F961E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive */; };
+		0B425F991E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B425F961E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive */; };
+		0B425FD41E9F122500C959CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B425FD31E9F122500C959CE /* CoreData.framework */; };
+		0B4260211E9F164D00C959CE /* mocs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C541E9DB58800F25A93 /* mocs.xcdatamodeld */; };
+		0B4260221E9F164E00C959CE /* mocs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C541E9DB58800F25A93 /* mocs.xcdatamodeld */; };
+		0B4261491E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */; };
+		0B42614A1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */; };
+		0B42614B1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */; };
+		0B42614C1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261341E9F1E3100C959CE /* Teacher+CoreDataProperties.m */; };
+		0B42614D1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261341E9F1E3100C959CE /* Teacher+CoreDataProperties.m */; };
+		0B42614E1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261341E9F1E3100C959CE /* Teacher+CoreDataProperties.m */; };
+		0B42614F1E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261361E9F1E3100C959CE /* Headmaster+CoreDataClass.m */; };
+		0B4261501E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261361E9F1E3100C959CE /* Headmaster+CoreDataClass.m */; };
+		0B4261511E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261361E9F1E3100C959CE /* Headmaster+CoreDataClass.m */; };
+		0B4261521E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261381E9F1E3100C959CE /* Headmaster+CoreDataProperties.m */; };
+		0B4261531E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261381E9F1E3100C959CE /* Headmaster+CoreDataProperties.m */; };
+		0B4261541E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261381E9F1E3100C959CE /* Headmaster+CoreDataProperties.m */; };
+		0B4261551E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613A1E9F1E3100C959CE /* ClassRoom+CoreDataClass.m */; };
+		0B4261561E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613A1E9F1E3100C959CE /* ClassRoom+CoreDataClass.m */; };
+		0B4261571E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613A1E9F1E3100C959CE /* ClassRoom+CoreDataClass.m */; };
+		0B4261581E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613C1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m */; };
+		0B4261591E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613C1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m */; };
+		0B42615A1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613C1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m */; };
+		0B42615B1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613E1E9F1E3100C959CE /* Grades+CoreDataClass.m */; };
+		0B42615C1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613E1E9F1E3100C959CE /* Grades+CoreDataClass.m */; };
+		0B42615D1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42613E1E9F1E3100C959CE /* Grades+CoreDataClass.m */; };
+		0B42615E1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261401E9F1E3100C959CE /* Grades+CoreDataProperties.m */; };
+		0B42615F1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261401E9F1E3100C959CE /* Grades+CoreDataProperties.m */; };
+		0B4261601E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261401E9F1E3100C959CE /* Grades+CoreDataProperties.m */; };
+		0B4261611E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261421E9F1E3100C959CE /* Student+CoreDataClass.m */; };
+		0B4261621E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261421E9F1E3100C959CE /* Student+CoreDataClass.m */; };
+		0B4261631E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261421E9F1E3100C959CE /* Student+CoreDataClass.m */; };
+		0B4261641E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261441E9F1E3100C959CE /* Student+CoreDataProperties.m */; };
+		0B4261651E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261441E9F1E3100C959CE /* Student+CoreDataProperties.m */; };
+		0B4261661E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261441E9F1E3100C959CE /* Student+CoreDataProperties.m */; };
+		0B4261671E9F1E3100C959CE /* School+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261461E9F1E3100C959CE /* School+CoreDataClass.m */; };
+		0B4261681E9F1E3100C959CE /* School+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261461E9F1E3100C959CE /* School+CoreDataClass.m */; };
+		0B4261691E9F1E3100C959CE /* School+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261461E9F1E3100C959CE /* School+CoreDataClass.m */; };
+		0B42616A1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261481E9F1E3100C959CE /* School+CoreDataProperties.m */; };
+		0B42616B1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261481E9F1E3100C959CE /* School+CoreDataProperties.m */; };
+		0B42616C1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4261481E9F1E3100C959CE /* School+CoreDataProperties.m */; };
+		0B4261741E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */; };
+		0B4261751E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */; };
+		0B4261761E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */; };
+		0B4261771E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616E1E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive */; };
+		0B4261781E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616E1E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive */; };
+		0B4261791E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616E1E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive */; };
+		0B42617A1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616F1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive */; };
+		0B42617B1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616F1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive */; };
+		0B42617C1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B42616F1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive */; };
+		0B42617D1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261701E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive */; };
+		0B42617E1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261701E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive */; };
+		0B42617F1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261701E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive */; };
+		0B4261801E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */; };
+		0B4261811E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */; };
+		0B4261821E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */; };
+		0B4261831E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */; };
+		0B4261841E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */; };
+		0B4261851E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */; };
+		0B4261861E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
+		0B4261871E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
+		0B4261881E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
 		0BDF6C4A1E9DB58800F25A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C491E9DB58800F25A93 /* main.m */; };
 		0BDF6C4D1E9DB58800F25A93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C4C1E9DB58800F25A93 /* AppDelegate.m */; };
 		0BDF6C501E9DB58800F25A93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C4F1E9DB58800F25A93 /* ViewController.m */; };
 		0BDF6C531E9DB58800F25A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF6C511E9DB58800F25A93 /* Main.storyboard */; };
-		0BDF6C561E9DB58800F25A93 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */; };
 		0BDF6C581E9DB58800F25A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF6C571E9DB58800F25A93 /* Assets.xcassets */; };
 		0BDF6C5B1E9DB58800F25A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF6C591E9DB58800F25A93 /* LaunchScreen.storyboard */; };
-		0BDF6C661E9DB58800F25A93 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C651E9DB58800F25A93 /* CoreDataTests.m */; };
 		0BDF6C711E9DB58800F25A93 /* CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C701E9DB58800F25A93 /* CoreDataUITests.m */; };
 		0BDF6C811E9DB65800F25A93 /* targets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF6C801E9DB65800F25A93 /* targets */; };
+		0BDF6C851E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
+		0BDF6C861E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
+		0BDF6C871E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +101,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B425F961E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "认识CoreData-基础使用 - 简书.webarchive"; sourceTree = "<group>"; };
+		0B425FD31E9F122500C959CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0B4261311E9F1E3100C959CE /* Teacher+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B4261331E9F1E3100C959CE /* Teacher+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B4261341E9F1E3100C959CE /* Teacher+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B4261351E9F1E3100C959CE /* Headmaster+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Headmaster+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B4261361E9F1E3100C959CE /* Headmaster+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Headmaster+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B4261371E9F1E3100C959CE /* Headmaster+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Headmaster+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B4261381E9F1E3100C959CE /* Headmaster+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Headmaster+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B4261391E9F1E3100C959CE /* ClassRoom+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClassRoom+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B42613A1E9F1E3100C959CE /* ClassRoom+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ClassRoom+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B42613B1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClassRoom+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B42613C1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ClassRoom+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B42613D1E9F1E3100C959CE /* Grades+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grades+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B42613E1E9F1E3100C959CE /* Grades+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grades+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B42613F1E9F1E3100C959CE /* Grades+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grades+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B4261401E9F1E3100C959CE /* Grades+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grades+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B4261411E9F1E3100C959CE /* Student+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B4261421E9F1E3100C959CE /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B4261431E9F1E3100C959CE /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B4261441E9F1E3100C959CE /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B4261451E9F1E3100C959CE /* School+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "School+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B4261461E9F1E3100C959CE /* School+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "School+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B4261471E9F1E3100C959CE /* School+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "School+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B4261481E9F1E3100C959CE /* School+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "School+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "第三遍看Core Data Programming Guide - 简书.webarchive"; sourceTree = "<group>"; };
+		0B42616E1E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "认识CoreData-使用进阶 - 简书.webarchive"; sourceTree = "<group>"; };
+		0B42616F1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive"; sourceTree = "<group>"; };
+		0B4261701E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive"; sourceTree = "<group>"; };
+		0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive"; sourceTree = "<group>"; };
+		0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive"; sourceTree = "<group>"; };
+		0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive"; sourceTree = "<group>"; };
 		0BDF6C451E9DB58800F25A93 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDF6C491E9DB58800F25A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BDF6C4B1E9DB58800F25A93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +141,7 @@
 		0BDF6C4E1E9DB58800F25A93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0BDF6C4F1E9DB58800F25A93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0BDF6C521E9DB58800F25A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		0BDF6C551E9DB58800F25A93 /* mocs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mocs.xcdatamodel; sourceTree = "<group>"; };
 		0BDF6C571E9DB58800F25A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BDF6C5A1E9DB58800F25A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BDF6C5C1E9DB58800F25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +152,9 @@
 		0BDF6C701E9DB58800F25A93 /* CoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataUITests.m; sourceTree = "<group>"; };
 		0BDF6C721E9DB58800F25A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BDF6C801E9DB65800F25A93 /* targets */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = targets; sourceTree = "<group>"; };
+		0BDF6C831E9DB8D700F25A93 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Model/Person.h; sourceTree = "<group>"; };
+		0BDF6C841E9DB8D700F25A93 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Model/Person.m; sourceTree = "<group>"; };
+		0BDF6C8A1E9DCFEF00F25A93 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B425FD41E9F122500C959CE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +183,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B425F951E9F02C400C959CE /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */,
+				0B42616E1E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive */,
+				0B42616F1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive */,
+				0B4261701E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive */,
+				0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */,
+				0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */,
+				0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */,
+				0B425F961E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		0B425FD21E9F122500C959CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B425FD31E9F122500C959CE /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0BDF6C3C1E9DB58800F25A93 = {
 			isa = PBXGroup;
 			children = (
+				0B4261311E9F1E3100C959CE /* Teacher+CoreDataClass.h */,
+				0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */,
+				0B4261331E9F1E3100C959CE /* Teacher+CoreDataProperties.h */,
+				0B4261341E9F1E3100C959CE /* Teacher+CoreDataProperties.m */,
+				0B4261351E9F1E3100C959CE /* Headmaster+CoreDataClass.h */,
+				0B4261361E9F1E3100C959CE /* Headmaster+CoreDataClass.m */,
+				0B4261371E9F1E3100C959CE /* Headmaster+CoreDataProperties.h */,
+				0B4261381E9F1E3100C959CE /* Headmaster+CoreDataProperties.m */,
+				0B4261391E9F1E3100C959CE /* ClassRoom+CoreDataClass.h */,
+				0B42613A1E9F1E3100C959CE /* ClassRoom+CoreDataClass.m */,
+				0B42613B1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.h */,
+				0B42613C1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m */,
+				0B42613D1E9F1E3100C959CE /* Grades+CoreDataClass.h */,
+				0B42613E1E9F1E3100C959CE /* Grades+CoreDataClass.m */,
+				0B42613F1E9F1E3100C959CE /* Grades+CoreDataProperties.h */,
+				0B4261401E9F1E3100C959CE /* Grades+CoreDataProperties.m */,
+				0B4261411E9F1E3100C959CE /* Student+CoreDataClass.h */,
+				0B4261421E9F1E3100C959CE /* Student+CoreDataClass.m */,
+				0B4261431E9F1E3100C959CE /* Student+CoreDataProperties.h */,
+				0B4261441E9F1E3100C959CE /* Student+CoreDataProperties.m */,
+				0B4261451E9F1E3100C959CE /* School+CoreDataClass.h */,
+				0B4261461E9F1E3100C959CE /* School+CoreDataClass.m */,
+				0B4261471E9F1E3100C959CE /* School+CoreDataProperties.h */,
+				0B4261481E9F1E3100C959CE /* School+CoreDataProperties.m */,
 				0BDF6C471E9DB58800F25A93 /* CoreData */,
 				0BDF6C641E9DB58800F25A93 /* CoreDataTests */,
 				0BDF6C6F1E9DB58800F25A93 /* CoreDataUITests */,
 				0BDF6C461E9DB58800F25A93 /* Products */,
+				0B425FD21E9F122500C959CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +254,7 @@
 		0BDF6C471E9DB58800F25A93 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				0BDF6C821E9DB8B400F25A93 /* Model */,
 				0BDF6C7E1E9DB61900F25A93 /* notes */,
 				0BDF6C7F1E9DB61900F25A93 /* resources */,
 				0BDF6C4B1E9DB58800F25A93 /* AppDelegate.h */,
@@ -115,8 +265,9 @@
 				0BDF6C571E9DB58800F25A93 /* Assets.xcassets */,
 				0BDF6C591E9DB58800F25A93 /* LaunchScreen.storyboard */,
 				0BDF6C5C1E9DB58800F25A93 /* Info.plist */,
-				0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */,
+				0BDF6C541E9DB58800F25A93 /* mocs.xcdatamodeld */,
 				0BDF6C481E9DB58800F25A93 /* Supporting Files */,
+				0BDF6C8A1E9DCFEF00F25A93 /* PrefixHeader.pch */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -150,6 +301,9 @@
 		0BDF6C7E1E9DB61900F25A93 /* notes */ = {
 			isa = PBXGroup;
 			children = (
+				0B425F951E9F02C400C959CE /* materials */,
+				0BDF6C831E9DB8D700F25A93 /* Person.h */,
+				0BDF6C841E9DB8D700F25A93 /* Person.m */,
 				0BDF6C801E9DB65800F25A93 /* targets */,
 			);
 			path = notes;
@@ -160,6 +314,13 @@
 			children = (
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		0BDF6C821E9DB8B400F25A93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +433,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDF6C5B1E9DB58800F25A93 /* LaunchScreen.storyboard in Resources */,
+				0B4261741E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
 				0BDF6C811E9DB65800F25A93 /* targets in Resources */,
 				0BDF6C581E9DB58800F25A93 /* Assets.xcassets in Resources */,
 				0BDF6C531E9DB58800F25A93 /* Main.storyboard in Resources */,
+				0B4261861E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
+				0B42617D1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
+				0B4261771E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */,
+				0B4261801E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
+				0B42617A1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
+				0B425F971E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */,
+				0B4261831E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +451,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B425F981E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */,
+				0B4261811E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
+				0B4261751E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
+				0B4261841E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
+				0B42617E1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
+				0B4261871E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
+				0B42617B1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
+				0B4261781E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +466,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B425F991E9F031800C959CE /* 认识CoreData-基础使用 - 简书.webarchive in Resources */,
+				0B4261821E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
+				0B4261761E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
+				0B4261851E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
+				0B42617F1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
+				0B4261881E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
+				0B42617C1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
+				0B4261791E9F1EB400C959CE /* 认识CoreData-使用进阶 - 简书.webarchive in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +484,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDF6C561E9DB58800F25A93 /* CoreData.xcdatamodeld in Sources */,
 				0BDF6C501E9DB58800F25A93 /* ViewController.m in Sources */,
+				0BDF6C851E9DB8D700F25A93 /* Person.m in Sources */,
+				0B42614C1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
+				0B4261521E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
 				0BDF6C4D1E9DB58800F25A93 /* AppDelegate.m in Sources */,
+				0B4261641E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
+				0B4261671E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
+				0B4261581E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
+				0B4261611E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
+				0B42616A1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0B4261551E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
+				0B42615E1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
+				0B42615B1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */,
 				0BDF6C4A1E9DB58800F25A93 /* main.m in Sources */,
+				0B4261491E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
+				0B42614F1E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +507,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDF6C661E9DB58800F25A93 /* CoreDataTests.m in Sources */,
+				0B4261681E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
+				0B42616B1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0B4261501E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
+				0B4261651E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
+				0B4261531E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
+				0BDF6C861E9DB8D700F25A93 /* Person.m in Sources */,
+				0B42615F1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
+				0B4261621E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
+				0B42615C1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */,
+				0B4261561E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
+				0B42614A1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
+				0B42614D1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
+				0B4260211E9F164D00C959CE /* mocs.xcdatamodeld in Sources */,
+				0B4261591E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +528,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDF6C871E9DB8D700F25A93 /* Person.m in Sources */,
+				0B4261631E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
+				0B4261661E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
+				0B4261511E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
+				0B4261601E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
+				0B4261691E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0BDF6C711E9DB58800F25A93 /* CoreDataUITests.m in Sources */,
+				0B42616C1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0B4261571E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
+				0B4261541E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
+				0B42614B1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
+				0B4260221E9F164E00C959CE /* mocs.xcdatamodeld in Sources */,
+				0B42614E1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
+				0B42615A1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
+				0B42615D1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PG34PH6C8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreData/PrefixHeader.pch";
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QianHaiLDY.zucheStaff;
@@ -464,6 +689,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PG34PH6C8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreData/PrefixHeader.pch";
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QianHaiLDY.zucheStaff;
@@ -540,6 +766,7 @@
 				0BDF6C771E9DB58800F25A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BDF6C781E9DB58800F25A93 /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +775,7 @@
 				0BDF6C7A1E9DB58800F25A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BDF6C7B1E9DB58800F25A93 /* Build configuration list for PBXNativeTarget "CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,17 +784,18 @@
 				0BDF6C7D1E9DB58800F25A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */ = {
+		0BDF6C541E9DB58800F25A93 /* mocs.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */,
+				0BDF6C551E9DB58800F25A93 /* mocs.xcdatamodel */,
 			);
-			currentVersion = 0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */;
-			path = CoreData.xcdatamodeld;
+			currentVersion = 0BDF6C551E9DB58800F25A93 /* mocs.xcdatamodel */;
+			path = mocs.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
     return YES;
 }
 
@@ -87,6 +88,7 @@
 - (void)saveContext {
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
     NSError *error = nil;
+    NSLog(@"%@",kmanagedObjectContext);
     if ([context hasChanges] && ![context save:&error]) {
         // Replace this implementation with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -94,5 +96,42 @@
         abort();
     }
 }
+
+/*以下通过以下方式创建的context不能调用saveContext*/
+/*
+-(NSManagedObjectModel *)managedObjectModel{
+    if (!_managedObjectModel) {
+        //数据模型路径
+        NSURL *momUrl = [[NSBundle mainBundle]URLForResource:@"CoreData" withExtension:@"momd"];//Extension:@"momd" 不是xcdatamodeld
+        _managedObjectModel = [[NSManagedObjectModel alloc]initWithContentsOfURL:momUrl];
+    }
+    return _managedObjectModel;
+}
+
+-(NSPersistentStoreCoordinator *)persistentStoreCoordinator{
+    if (!_persistentStoreCoordinator) {
+        _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:self.managedObjectModel];
+        //配置数据库路径
+        NSURL *domainUrl = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
+        NSURL *sqliteUrl =[domainUrl URLByAppendingPathComponent:@"CoreData.sqlite"];
+        //添加数据库
+        NSError *error = nil;
+        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteUrl options:nil error:&error];
+        if (error) {
+            NSLog(@"addPersistentStore error = %@",error);
+        }
+    }
+    return _persistentStoreCoordinator;
+}
+
+-(NSManagedObjectContext *)managedObjectContext{
+    if (!_managedObjectContext) {
+        _managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
+        //指定调度器
+        _managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
+    }
+    return _managedObjectContext;
+}
+ */
 
 @end

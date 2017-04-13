@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ClassRoom" representedClassName="ClassRoom" syncable="YES">
+        <attribute name="no" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="classToheadmaster" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Headmaster" inverseName="headmasterToclass" inverseEntity="Headmaster" syncable="YES"/>
+        <relationship name="classToStudent" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Student" inverseName="studentToClass" inverseEntity="Student" syncable="YES"/>
+        <relationship name="classToTeacher" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Teacher" inverseName="teacherToClass" inverseEntity="Teacher" syncable="YES"/>
+    </entity>
+    <entity name="Grades" representedClassName="Grades" elementID="no" syncable="YES">
+        <attribute name="no" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="gradeToheadmaster" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Headmaster" inverseName="headmasterToGrade" inverseEntity="Headmaster" syncable="YES"/>
+        <relationship name="gradeToSchool" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="School" inverseName="shcoolToGrad" inverseEntity="School" syncable="YES"/>
+    </entity>
+    <entity name="Headmaster" representedClassName="Headmaster" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="headmasterToclass" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ClassRoom" inverseName="classToheadmaster" inverseEntity="ClassRoom" syncable="YES"/>
+        <relationship name="headmasterToGrade" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Grades" inverseName="gradeToheadmaster" inverseEntity="Grades" syncable="YES"/>
+    </entity>
+    <entity name="School" representedClassName="School" elementID="name" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shcoolToGrad" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Grades" inverseName="gradeToSchool" inverseEntity="Grades" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="classes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="studentToClass" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="ClassRoom" inverseName="classToStudent" inverseEntity="ClassRoom" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Student"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Teacher" representedClassName="Teacher" syncable="YES">
+        <attribute name="course" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teacherToClass" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="ClassRoom" inverseName="classToTeacher" inverseEntity="ClassRoom" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ClassRoom" positionX="270" positionY="318" width="128" height="103"/>
+        <element name="Grades" positionX="216" positionY="38" width="128" height="88"/>
+        <element name="Headmaster" positionX="252" positionY="162" width="128" height="88"/>
+        <element name="School" positionX="252" positionY="-90" width="128" height="73"/>
+        <element name="Student" positionX="466" positionY="444" width="128" height="131"/>
+        <element name="Teacher" positionX="63" positionY="468" width="128" height="88"/>
+    </elements>
+</model>
