@@ -10,6 +10,10 @@
 #import "Person.h"
 #import "School+CoreDataClass.h"
 #import "Grades+CoreDataClass.h"
+#import "Headmaster+CoreDataClass.h"
+#import "ClassRoom+CoreDataClass.h"
+#import "Teacher+CoreDataClass.h"
+#import "Student+CoreDataClass.h"
 @interface ViewController ()
 
 @end
@@ -30,7 +34,15 @@
     @try {
 //        [self relationships1];
 
-        [self relationships2];
+//        [self relationships2];
+        
+//        [self deleteData1];
+        
+//        [self deleteData2];
+        
+        [self fetchWithEntityName:school managedObjectContext:kAppContext];
+        
+        
         
     } @catch (NSException *exception) {
         NSLog(@"exception = %@",exception);
@@ -73,9 +85,27 @@
             NSLog(@"sch=%@",sch.name);
             for (Grades *gra in sch.shcoolToGrad) {
                 NSLog(@"gra=%d",gra.no);
+                for (Headmaster *h in gra.gradeToheadmaster) {
+                    NSLog(@"%@",h.name);
+                    for (Student *stu in h.headmasterToclass.classToStudent) {
+                        NSLog(@"Headmaster = name =%@,age = %d",stu.name,stu.age);
+                        if (stu.age ==0) {
+                            stu.age = 19;
+                        }
+                    }
+                }
+                for (Headmaster *h in gra.gradeToheadmaster) {
+                    for (Teacher *t in h.headmasterToclass.classToTeacher) {
+                        NSLog(@"name =%@,age = %@",t.name,t.course);
+                    }
+                }
+ 
             }
         }
-        NSLog(@"executeFetchRequest results = %@",results);
+        if (kAppContext.hasChanges) {
+            [kAppDelegete saveContext];
+        }
+//        NSLog(@"executeFetchRequest results = %@",results);
     }
     
 }
@@ -122,34 +152,116 @@
 }
 //给已存在的对象添加关联对象
 -(void)relationships2{
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:school];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Grades"];
     NSError *error = nil;
-    NSArray<School *>*results = [kAppContext executeFetchRequest:fetchRequest error:&error];
+    NSArray<Grades *>*results = [kAppContext executeFetchRequest:fetchRequest error:&error];
     if (error) {
         NSLog(@"error=%@",error);
     }
-    for (School *sch in results) {
-        //给深圳外国语学校增加班级66 88
-        if ([sch.name isEqualToString:@"深圳外国语学校"]) {
-            Grades *gra66 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra66.no = 66;
-            Grades *gra88 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra88.no = 88;
-            [sch addShcoolToGrad:[NSSet setWithObjects:gra88,gra66, nil]];
-        }
-        //给QingHuaMiddleSchool增加班级99 77
-        if ([sch.name isEqualToString:@"QingHuaMiddleSchool"]) {
-            Grades *gra99 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra99.no = 99;
-            Grades *gra77 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra77.no = 77;
-            [sch addShcoolToGrad:[NSSet setWithObjects:gra99,gra77, nil]];
+//    for (School *sch in results) {
+//        //给深圳外国语学校增加班级66 88
+//        if ([sch.name isEqualToString:@"深圳外国语学校"]) {
+//            Grades *gra66 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra66.no = 66;
+//            Grades *gra88 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra88.no = 88;
+//            [sch addShcoolToGrad:[NSSet setWithObjects:gra88,gra66, nil]];
+//        }
+//        //给QingHuaMiddleSchool增加班级99 77
+//        if ([sch.name isEqualToString:@"QingHuaMiddleSchool"]) {
+//            Grades *gra99 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra99.no = 99;
+//            Grades *gra77 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra77.no = 77;
+//            [sch addShcoolToGrad:[NSSet setWithObjects:gra99,gra77, nil]];
+//        }
+//    }
+    
+    //给88增加headmaster88 teacher 881 882 student 991 992
+    for (Grades *gra in results) {
+        
+        if (gra.no == 88) {
+            @try {
+                Headmaster *h88 = [NSEntityDescription insertNewObjectForEntityForName:@"Headmaster"  inManagedObjectContext:kAppContext];
+                h88.name = @"H88";
+                //添加headteacher
+                [gra addGradeToheadmaster:[NSSet setWithObject:h88]];
+                
+                //分配班级
+                ClassRoom *classRoom = [NSEntityDescription insertNewObjectForEntityForName:@"ClassRoom" inManagedObjectContext:kAppContext];
+                classRoom.no = 308;
+                h88.headmasterToclass = classRoom;//一对一
+                
+                //添加学生
+                Student *stu1 = [NSEntityDescription insertNewObjectForEntityForName:@"Student"  inManagedObjectContext:kAppContext];
+                stu1.classes = @"cla308";
+                stu1.name = @"STU881";
+                Student *stu2 = [NSEntityDescription insertNewObjectForEntityForName:@"Student"  inManagedObjectContext:kAppContext];
+                stu2.name = @"STU882";
+                stu2.classes = @"cla308";
+                [classRoom addClassToStudent:[NSSet setWithObjects:stu1,stu2, nil]];
+                
+                //添加老师
+                Teacher *t1 = [NSEntityDescription insertNewObjectForEntityForName:@"Teacher"  inManagedObjectContext:kAppContext];
+                t1.name = @"T991";
+                t1.course = @"couse308";
+                
+                Teacher *t2 = [NSEntityDescription insertNewObjectForEntityForName:@"Teacher"  inManagedObjectContext:kAppContext];
+                t2.name = @"T991";
+                t2.course = @"couse308";
+                [classRoom addClassToTeacher:[NSSet setWithObjects:t1,t2, nil]];
+
+            } @catch (NSException *exception) {
+                NSLog(@"exception =%@",exception);
+            } @finally {
+                NSLog(@"break");
+                
+            }
+            
         }
     }
     
     [kAppDelegete saveContext];
     
-    [self fetchWithEntityName:school managedObjectContext:kAppContext];
+//    [self fetchWithEntityName:school managedObjectContext:kAppContext];
     }
-
+#pragma mark- 删除
+//测试deny  Items cannot be deleted from classToheadmaster.
+-(void)deleteData1{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"ClassRoom"];
+    NSError *error = nil;
+    NSArray<ClassRoom *> *results = [kAppContext executeFetchRequest:fetchRequest error:&error];
+    for (ClassRoom *c in results) {
+        @try {
+            [kAppContext deleteObject:c ];
+        } @catch (NSException *exception) {
+            NSLog(@"exception = %@",exception);
+        } @finally {
+            
+        }
+    }
+    if (kAppContext.hasChanges) {
+        [kAppDelegete saveContext];
+    }
+//     [self fetchWithEntityName:school managedObjectContext:kAppContext];
+}
+//测试 cascade
+-(void)deleteData2{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc]initWithEntityName:@"ClassRoom"];
+    NSError *error = nil;
+    NSArray<ClassRoom *> *results = [kAppContext executeFetchRequest:fetchRequest error:&error];
+    for (ClassRoom *c in results) {
+        @try {
+            [kAppContext deleteObject:c ];
+        } @catch (NSException *exception) {
+            NSLog(@"exception = %@",exception);
+        } @finally {
+            
+        }
+    }
+    if (kAppContext.hasChanges) {
+        [kAppDelegete saveContext];
+    }
+         [self fetchWithEntityName:school managedObjectContext:kAppContext];
+}
 @end
