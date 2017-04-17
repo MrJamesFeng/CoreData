@@ -36,6 +36,8 @@
         <relationship name="teacherToClass" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ClassRoom" inverseName="classToTeacher" inverseEntity="ClassRoom" syncable="YES"/>
     </entity>
     <fetchRequest name="school" entity="School" predicateString="name CONTAINS &quot;Qing&quot;"/>
+    <configuration name="HomePage"/>
+    <configuration name="LaunchInfo"/>
     <elements>
         <element name="ClassRoom" positionX="270" positionY="318" width="128" height="105"/>
         <element name="Grades" positionX="216" positionY="38" width="128" height="90"/>

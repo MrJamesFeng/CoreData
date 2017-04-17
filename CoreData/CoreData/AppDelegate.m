@@ -107,7 +107,7 @@
 }
 
 /*以下通过以下方式创建的context不能调用saveContext*/
-/*
+
 -(NSManagedObjectModel *)managedObjectModel{
     if (!_managedObjectModel) {
         //数据模型路径
@@ -120,19 +120,31 @@
 -(NSPersistentStoreCoordinator *)persistentStoreCoordinator{
     if (!_persistentStoreCoordinator) {
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:self.managedObjectModel];
-        //配置数据库路径
+//        配置数据库路径
         NSURL *domainUrl = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
         NSURL *sqliteUrl =[domainUrl URLByAppendingPathComponent:@"CoreData.sqlite"];
-        //添加数据库
+//        添加数据库
         NSError *error = nil;
         [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteUrl options:nil error:&error];
         if (error) {
             NSLog(@"addPersistentStore error = %@",error);
         }
+        
+        /*
+         //添加自定义仓库                                                                                                                                                        
+        NSURL *storeUrl = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Launch"];
+//        NSSQLiteStoreType API_AVAILABLE(macosx(10.4),ios(3.0));
+//        COREDATA_EXTERN NSString * const NSXMLStoreType API_AVAILABLE(macosx(10.4)) API_UNAVAILABLE(ios);
+//        COREDATA_EXTERN NSString * const NSBinaryStoreType API_AVAILABLE(macosx(10.4),ios(3.0));
+//        COREDATA_EXTERN NSString * const NSInMemoryStoreType
+        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:@"Launch" URL:storeUrl options:nil error:&error];
+        */
     }
     return _persistentStoreCoordinator;
 }
-
+-(NSURL *)applicationDocumentsDirectory{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
+}
 -(NSManagedObjectContext *)managedObjectContext{
     if (!_managedObjectContext) {
         _managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
@@ -141,6 +153,6 @@
     }
     return _managedObjectContext;
 }
- */
+
 
 @end

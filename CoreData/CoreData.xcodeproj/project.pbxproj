@@ -96,6 +96,9 @@
 		0BDF6C851E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
 		0BDF6C861E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
 		0BDF6C871E9DB8D700F25A93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C841E9DB8D700F25A93 /* Person.m */; };
+		0BE44E741EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */; };
+		0BE44E751EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */; };
+		0BE44E761EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +187,9 @@
 		0BDF6C831E9DB8D700F25A93 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Model/Person.h; sourceTree = "<group>"; };
 		0BDF6C841E9DB8D700F25A93 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Model/Person.m; sourceTree = "<group>"; };
 		0BDF6C8A1E9DCFEF00F25A93 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
+		0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive"; sourceTree = "<group>"; };
+		0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,9 @@
 		0B425F951E9F02C400C959CE /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */,
+				0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */,
+				0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */,
 				0B3F84CE1EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive */,
 				0B3F84CF1EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive */,
 				0B3F84D01EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata */,
@@ -476,10 +485,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDF6C5B1E9DB58800F25A93 /* LaunchScreen.storyboard in Resources */,
+				0BE44E761EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
 				0B4261741E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
 				0BDF6C811E9DB65800F25A93 /* targets in Resources */,
 				0B14D3621E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive in Resources */,
 				0B1933491E9FAC3400C8061B /* 可能碰到的iOS笔试面试题（14）--数据存储 - 简书.webarchive in Resources */,
+				0BE44E751EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive in Resources */,
 				0BDF6C581E9DB58800F25A93 /* Assets.xcassets in Resources */,
 				0B14D3611E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive in Resources */,
 				0B19334A1E9FAC3400C8061B /* CoreData 多表 关联 - 简书.webarchive in Resources */,
@@ -491,6 +502,7 @@
 				0B3F84D71EA0D50B00542E51 /* CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive in Resources */,
 				0B3F84D51EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive in Resources */,
 				0B42617D1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
+				0BE44E741EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
 				0B4261771E9F1EB400C959CE /* 2、认识CoreData-使用进阶 - 简书.webarchive in Resources */,
 				0B19334C1E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive in Resources */,
 				0B14D3601E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive in Resources */,

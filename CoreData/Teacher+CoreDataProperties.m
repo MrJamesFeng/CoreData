@@ -17,5 +17,13 @@
 @dynamic course;
 @dynamic name;
 @dynamic teacherToClass;
+-(void)awakeFromFetch{
+    [super awakeFromFetch];
+}
+
+-(void)awakeFromInsert{
+    [super awakeFromInsert];
+    
+}
 
 @end

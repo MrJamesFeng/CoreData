@@ -18,4 +18,15 @@
 @dynamic headmasterToclass;
 @dynamic headmasterToGrade;
 
+-(void)awakeFromFetch{
+    [super awakeFromFetch];
+    
+}
+-(void)awakeFromInsert{
+    [super awakeFromInsert];
+    NSLog(@"%s %@",__func__,self.name);
+}
+-(void)didTurnIntoFault{
+    
+}
 @end

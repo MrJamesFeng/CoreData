@@ -18,4 +18,12 @@
 @dynamic gradeToheadmaster;
 @dynamic gradeToSchool;
 
+-(void)awakeFromInsert{
+    [super awakeFromInsert];
+    
+}
+-(void)awakeFromFetch{
+    [super awakeFromFetch];
+    NSLog(@"%s no-->%d",__func__,self.no);
+}
 @end
