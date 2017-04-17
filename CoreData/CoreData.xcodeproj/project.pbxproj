@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B14D3601E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B14D35D1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive */; };
-		0B14D3611E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B14D35E1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive */; };
 		0B14D3621E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B14D35F1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive */; };
 		0B14D3781E9F96F400D4E103 /* 将JSON数据映射到Object(包括CoreData) - zsd372的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B14D3771E9F96F400D4E103 /* 将JSON数据映射到Object(包括CoreData) - zsd372的专栏 - 博客频道 - CSDN.NET.webarchive */; };
 		0B1933441E9F9AD600C8061B /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */; };
@@ -102,6 +100,15 @@
 		0BE44E7A1EA46FBB00AAB452 /* FetchDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E781EA46FBB00AAB452 /* FetchDataController.m */; };
 		0BE44E7B1EA46FBB00AAB452 /* FetchDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E781EA46FBB00AAB452 /* FetchDataController.m */; };
 		0BE44E821EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */; };
+		0BE44E871EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */; };
+		0BE44E881EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */; };
+		0BE44E891EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */; };
+		0BE44E8A1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E861EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m */; };
+		0BE44E8B1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E861EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m */; };
+		0BE44E8C1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E861EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m */; };
+		0BE44E8E1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E8D1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive */; };
+		0BE44E8F1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E8D1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive */; };
+		0BE44E901EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E8D1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +129,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B14D35D1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive"; sourceTree = "<group>"; };
-		0B14D35E1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive"; sourceTree = "<group>"; };
 		0B14D35F1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive"; sourceTree = "<group>"; };
 		0B14D3771E9F96F400D4E103 /* 将JSON数据映射到Object(包括CoreData) - zsd372的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "将JSON数据映射到Object(包括CoreData) - zsd372的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
 		0B1933451E9FAC3400C8061B /* 可能碰到的iOS笔试面试题（14）--数据存储 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "可能碰到的iOS笔试面试题（14）--数据存储 - 简书.webarchive"; sourceTree = "<group>"; };
@@ -195,6 +200,12 @@
 		0BE44E771EA46FBB00AAB452 /* FetchDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchDataController.h; sourceTree = "<group>"; };
 		0BE44E781EA46FBB00AAB452 /* FetchDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchDataController.m; sourceTree = "<group>"; };
 		0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive"; sourceTree = "<group>"; };
+		0BE44E831EA4C13A00AAB452 /* UserInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UserInfo+CoreDataClass.h"; path = "../../UserInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UserInfo+CoreDataClass.m"; path = "../../UserInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		0BE44E851EA4C13A00AAB452 /* UserInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UserInfo+CoreDataProperties.h"; path = "../../UserInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0BE44E861EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UserInfo+CoreDataProperties.m"; path = "../../UserInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0BE44E8D1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "认识CoreData-高级用法 - 简书(版本迁移).webarchive"; sourceTree = "<group>"; };
+		0BE44E911EA4C98300AAB452 /* CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +237,7 @@
 		0B425F951E9F02C400C959CE /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				0BE44E8D1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive */,
 				0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */,
 				0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */,
 				0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */,
@@ -240,8 +252,6 @@
 				0B1933471E9FAC3400C8061B /* iOS_阅读《iOS数据库应用高级编程》的总结 - 简书.webarchive */,
 				0B1933481E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive */,
 				0B14D3771E9F96F400D4E103 /* 将JSON数据映射到Object(包括CoreData) - zsd372的专栏 - 博客频道 - CSDN.NET.webarchive */,
-				0B14D35D1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive */,
-				0B14D35E1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive */,
 				0B14D35F1E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一)-爱编程.webarchive */,
 				0B42616D1E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive */,
 				0B42616E1E9F1EB400C959CE /* 2、认识CoreData-使用进阶 - 简书.webarchive */,
@@ -354,6 +364,10 @@
 		0BDF6C821E9DB8B400F25A93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BE44E831EA4C13A00AAB452 /* UserInfo+CoreDataClass.h */,
+				0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */,
+				0BE44E851EA4C13A00AAB452 /* UserInfo+CoreDataProperties.h */,
+				0BE44E861EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m */,
 				0B4261311E9F1E3100C959CE /* Teacher+CoreDataClass.h */,
 				0B4261321E9F1E3100C959CE /* Teacher+CoreDataClass.m */,
 				0B4261331E9F1E3100C959CE /* Teacher+CoreDataProperties.h */,
@@ -492,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDF6C5B1E9DB58800F25A93 /* LaunchScreen.storyboard in Resources */,
+				0BE44E8E1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */,
 				0BE44E761EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
 				0B4261741E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
 				0BDF6C811E9DB65800F25A93 /* targets in Resources */,
@@ -499,7 +514,6 @@
 				0B1933491E9FAC3400C8061B /* 可能碰到的iOS笔试面试题（14）--数据存储 - 简书.webarchive in Resources */,
 				0BE44E751EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive in Resources */,
 				0BDF6C581E9DB58800F25A93 /* Assets.xcassets in Resources */,
-				0B14D3611E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive in Resources */,
 				0B19334A1E9FAC3400C8061B /* CoreData 多表 关联 - 简书.webarchive in Resources */,
 				0B3F84D81EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive in Resources */,
 				0BE44E821EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive in Resources */,
@@ -513,7 +527,6 @@
 				0BE44E741EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */,
 				0B4261771E9F1EB400C959CE /* 2、认识CoreData-使用进阶 - 简书.webarchive in Resources */,
 				0B19334C1E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive in Resources */,
-				0B14D3601E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - 萨斯辈的呼唤.webarchive in Resources */,
 				0B19334B1E9FAC3400C8061B /* iOS_阅读《iOS数据库应用高级编程》的总结 - 简书.webarchive in Resources */,
 				0B3F84D91EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive in Resources */,
 				0B4261801E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
@@ -531,6 +544,7 @@
 				0B4261811E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
 				0B4261751E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
 				0B4261841E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
+				0BE44E8F1EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */,
 				0B42617E1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
 				0B4261871E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
 				0B42617B1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
@@ -546,6 +560,7 @@
 				0B4261821E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
 				0B4261761E9F1EB400C959CE /* 第三遍看Core Data Programming Guide - 简书.webarchive in Resources */,
 				0B4261851E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
+				0BE44E901EA4C74F00AAB452 /* 认识CoreData-高级用法 - 简书(版本迁移).webarchive in Resources */,
 				0B42617F1E9F1EB400C959CE /* CoreData创建托管对象子类后，编译文件重复错误 - 简书.webarchive in Resources */,
 				0B4261881E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
 				0B42617C1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
@@ -569,6 +584,7 @@
 				0B4261641E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
 				0B4261671E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0BE44E791EA46FBB00AAB452 /* FetchDataController.m in Sources */,
+				0BE44E871EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */,
 				0B4261581E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
 				0B4261611E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
 				0B42616A1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
@@ -577,6 +593,7 @@
 				0B42615B1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */,
 				0BDF6C4A1E9DB58800F25A93 /* main.m in Sources */,
 				0B4261491E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
+				0BE44E8A1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */,
 				0B42614F1E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,8 +602,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE44E8B1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */,
 				0B4261681E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0B42616B1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0BE44E881EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */,
 				0BE44E7A1EA46FBB00AAB452 /* FetchDataController.m in Sources */,
 				0B4261501E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 				0B4261651E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
@@ -607,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE44E8C1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */,
 				0BDF6C871E9DB8D700F25A93 /* Person.m in Sources */,
 				0B4261631E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
 				0B4261661E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
@@ -619,6 +639,7 @@
 				0B4261571E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
 				0B4261541E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
 				0B42614B1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
+				0BE44E891EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */,
 				0B4260221E9F164E00C959CE /* CoreData.xcdatamodeld in Sources */,
 				0B42614E1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
 				0B42615A1E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
@@ -872,6 +893,7 @@
 		0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0BE44E911EA4C98300AAB452 /* CoreData2.xcdatamodel */,
 				0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */,
 			);
 			currentVersion = 0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */;

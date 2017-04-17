@@ -15,6 +15,7 @@
 #import "Teacher+CoreDataClass.h"
 #import "Student+CoreDataClass.h"
 #import "FetchDataController.h"
+#import "UserInfo+CoreDataClass.h"
 @interface ViewController ()
 
 @end
@@ -70,6 +71,8 @@
         
 //        [self asyc];
         
+        [self testVersion1];
+        
         
     } @catch (NSException *exception) {
         NSLog(@"exception = %@ line:%d",exception,__LINE__);
@@ -81,6 +84,27 @@
 //    [self testArr];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(fetchData)];
+    
+}
+//版本升级:新增一个类（表）不用做版本迁移
+-(void)testVersion1{
+    UserInfo *user = [NSEntityDescription insertNewObjectForEntityForName:@"UserInfo" inManagedObjectContext:kAppContext];
+    user.title = @"duser新增";
+    user.birthday = [NSDate date];
+    user.icon = [UIImage imageNamed:@"icon2"];
+    user.attrAdded = @"这是一个新增属性";//The managed object model version used to open the persistent store is incompatible with the one that was used to create the persistent store.
+    if (kAppContext.hasChanges) {
+        [kAppDelegete saveContext];
+    }
+    NSFetchRequest *fetchRequest = [UserInfo fetchRequest];
+    NSError *error = nil;
+    NSArray<UserInfo *>*userInfos = [kAppContext executeFetchRequest:fetchRequest error:&error];
+    if (error) {
+        NSLog(@"func:%s line:%d error:%@",__func__,__LINE__,error);
+    }
+    for (UserInfo *userInfo in userInfos) {
+        NSLog(@"title:%@ icon:%@",userInfo.title,userInfo.icon);
+    }
     
 }
 -(void)fetchData{

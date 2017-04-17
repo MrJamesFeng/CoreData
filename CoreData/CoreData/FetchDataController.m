@@ -167,7 +167,7 @@
 }
 -(NSFetchedResultsController *)fetchedResultsController{
     if (!_fetchedResultsController) {
-        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"classes" ascending:YES];
         NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
         
         //sortDescriptors required
