@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    ViewController *vc = [[ViewController alloc]init];
+    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:vc];
+    [self.window setRootViewController:navc];
+    [self.window makeKeyAndVisible];
    
     return YES;
 }
@@ -145,9 +151,12 @@
 -(NSURL *)applicationDocumentsDirectory{
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
 }
+
+#warning NSPrivateQueueConcurrencyType
 -(NSManagedObjectContext *)managedObjectContext{
+    
     if (!_managedObjectContext) {
-        _managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
+        _managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSPrivateQueueConcurrencyType];
         //指定调度器
         _managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
     }

@@ -14,6 +14,7 @@
 #import "ClassRoom+CoreDataClass.h"
 #import "Teacher+CoreDataClass.h"
 #import "Student+CoreDataClass.h"
+#import "FetchDataController.h"
 @interface ViewController ()
 
 @end
@@ -34,7 +35,7 @@
 //    NSManagedObjectContextObjectsDidChangeNotification
     
     //数据保存完毕后接受通知更新UI
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveContextSave:) name:NSManagedObjectContextDidSaveNotification object:nil];
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(receiveContextSave:) name:NSManagedObjectContextDidSaveNotification object:nil];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self testPerson];
     
@@ -42,7 +43,7 @@
 //        [self addSingleEntity];
 //        [self relationships1];
 
-        [self relationships2];
+//        [self relationships2];
         
 //        [self deleteData1];
         
@@ -79,12 +80,20 @@
     
 //    [self testArr];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(fetchData)];
     
+}
+-(void)fetchData{
+    FetchDataController *fetchVC = [[FetchDataController alloc]init];
+    [self.navigationController pushViewController:fetchVC animated:YES];                   
 }
 - (void)receiveContextSave:(NSNotification *)note {
     [kAppContext mergeChangesFromContextDidSaveNotification:note];
     
 //    注意：通知的 userInfo 里保存的 managedObjects 不可以直接在另一个线程的 context 中直接使用！也就是 managedObject 不是跨线程的，如果想要在别的线程操作，必须通过 objectId 在另一个 context 里再重新获得这个 object。
+//kAppContext(NSMainQueueConcurrencyType)要获取kmanagedObjectContext(NSPrivateQueueConcurrencyType)修改的数据必须先获取kmanagedObjectContext传过来的objectId，然后再通过objectId去获取
+//    [kmanagedObjectContext objectWithID:<#(nonnull NSManagedObjectID *)#>];
+    
 
 }
 
@@ -106,6 +115,22 @@
 //    url ？
 //    NSManagedObjectID *objectID = [kAppContext.persistentStoreCoordinator managedObjectIDForURIRepresentation:<#(nonnull NSURL *)#>];
 //    [kAppContext objectWithID:<#(nonnull NSManagedObjectID *)#>];
+}
+#pragma mark- test NSPrivateQueueConcurrencyType
+-(void)testPrivateQueueConcurrencyType{
+    //私有队列后台异步执行
+    [kmanagedObjectContext performBlock:^{
+        
+    }];
+    
+    //私有队列后台同步执行
+    [kmanagedObjectContext performBlockAndWait:^{
+        
+    }];
+    
+    NSError *error = nil;
+    //后台处理完毕数据后发出通知，通过mergeChangesFromContextDidSaveNotification:note在context将数据合并到主线程
+    [kmanagedObjectContext save:&error];
 }
 -(void)testValidate{
     School *sch = [NSEntityDescription insertNewObjectForEntityForName:@"School" inManagedObjectContext:kAppContext];
@@ -466,26 +491,29 @@ grd.no = 8;
         NSLog(@"error=%@",error);
     }
     
-    /*
-    for (School *sch in results) {
-//        //给深圳外国语学校增加班级66 88
+    
+//    for (School *sch in results) {
+////        //给深圳外国语学校增加班级66 88
 //        if ([sch.name isEqualToString:@"深圳外国语学校"]) {
 //            Grades *gra66 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
 //            gra66.no = 66;
+//            
 //            Grades *gra88 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
 //            gra88.no = 88;
 //            [sch addShcoolToGrad:[NSSet setWithObjects:gra88,gra66, nil]];
 //        }
-//        //给QingHuaMiddleSchool增加班级99 77
-        if ([sch.name isEqualToString:@"QingHuaMiddleSchool"]) {
-            Grades *gra99 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra99.no = 99;
-            Grades *gra77 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
-            gra77.no = 77;
-            [sch addShcoolToGrad:[NSSet setWithObjects:gra99,gra77, nil]];
-        }
-    }
-     */
+////        //给QingHuaMiddleSchool增加班级99 77
+//        if ([sch.name isEqualToString:@"QingHuaMiddleSchool"]) {
+//            Grades *gra99 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra99.no = 99;
+//            
+//            Grades *gra77 = [NSEntityDescription insertNewObjectForEntityForName:@"Grades" inManagedObjectContext:kAppContext];
+//            gra77.no = 77;
+//            
+//            [sch addShcoolToGrad:[NSSet setWithObjects:gra99,gra77, nil]];
+//        }
+//    }
+    
 
     //给88增加headmaster88 teacher 881 882 student 991 992
     for (Grades *gra in results) {

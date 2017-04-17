@@ -18,7 +18,6 @@
 		0B19334C1E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B1933481E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive */; };
 		0B3F84D41EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84CE1EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive */; };
 		0B3F84D51EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84CF1EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive */; };
-		0B3F84D61EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84D01EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata */; };
 		0B3F84D71EA0D50B00542E51 /* CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84D11EA0D50B00542E51 /* CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive */; };
 		0B3F84D81EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84D21EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive */; };
 		0B3F84D91EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F84D31EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive */; };
@@ -99,6 +98,10 @@
 		0BE44E741EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */; };
 		0BE44E751EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */; };
 		0BE44E761EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */; };
+		0BE44E791EA46FBB00AAB452 /* FetchDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E781EA46FBB00AAB452 /* FetchDataController.m */; };
+		0BE44E7A1EA46FBB00AAB452 /* FetchDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E781EA46FBB00AAB452 /* FetchDataController.m */; };
+		0BE44E7B1EA46FBB00AAB452 /* FetchDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44E781EA46FBB00AAB452 /* FetchDataController.m */; };
+		0BE44E821EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +132,6 @@
 		0B1933481E9FAC3400C8061B /* iOS基础-CoreData--使用总结关联操作 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS基础-CoreData--使用总结关联操作 - 简书.webarchive"; sourceTree = "<group>"; };
 		0B3F84CE1EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "让CoreData更简单些 - 简书.webarchive"; sourceTree = "<group>"; };
 		0B3F84CF1EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive"; sourceTree = "<group>"; };
-		0B3F84D01EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata"; sourceTree = "<group>"; };
 		0B3F84D11EA0D50B00542E51 /* CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive"; sourceTree = "<group>"; };
 		0B3F84D21EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CoreData 从入门到精通（四）并发操作 - 简书.webarchive"; sourceTree = "<group>"; };
 		0B3F84D31EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive"; sourceTree = "<group>"; };
@@ -190,6 +192,9 @@
 		0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
 		0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive"; sourceTree = "<group>"; };
 		0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive"; sourceTree = "<group>"; };
+		0BE44E771EA46FBB00AAB452 /* FetchDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchDataController.h; sourceTree = "<group>"; };
+		0BE44E781EA46FBB00AAB452 /* FetchDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchDataController.m; sourceTree = "<group>"; };
+		0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,12 +226,12 @@
 		0B425F951E9F02C400C959CE /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				0BE44E811EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive */,
 				0BE44E711EA465E000AAB452 /* 操作CoreData 常见的错误及解决方法 - ch_soft的专栏 - 博客频道 - CSDN.NET.webarchive */,
 				0BE44E721EA465E000AAB452 /* 详解持久化Core Data框架的原理以及使用---转自Bison的技术博客 - 简书.webarchive */,
 				0BE44E731EA465E000AAB452 /* iOS 开发系列：CoreData Object 变成 Fault 的一种方式 - 欧阳天涵的专栏 - 博客频道 - CSDN.NET.webarchive */,
 				0B3F84CE1EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive */,
 				0B3F84CF1EA0D50B00542E51 /* 优秀的 CoreData 便捷存取框架，MagicalRecord - 简书.webarchive */,
-				0B3F84D01EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata */,
 				0B3F84D11EA0D50B00542E51 /* CoreData 从入门到精通（二） 数据的增删改查 - 简书.webarchive */,
 				0B3F84D21EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive */,
 				0B3F84D31EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive */,
@@ -296,6 +301,8 @@
 				0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */,
 				0BDF6C481E9DB58800F25A93 /* Supporting Files */,
 				0BDF6C8A1E9DCFEF00F25A93 /* PrefixHeader.pch */,
+				0BE44E771EA46FBB00AAB452 /* FetchDataController.h */,
+				0BE44E781EA46FBB00AAB452 /* FetchDataController.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -495,6 +502,7 @@
 				0B14D3611E9F39B800D4E103 /* iOS 网络请求Json自动转存到CoreData(一) - CodeWeblog.com.webarchive in Resources */,
 				0B19334A1E9FAC3400C8061B /* CoreData 多表 关联 - 简书.webarchive in Resources */,
 				0B3F84D81EA0D50B00542E51 /* CoreData 从入门到精通（四）并发操作 - 简书.webarchive in Resources */,
+				0BE44E821EA4BD9E00AAB452 /* UITableView编辑模式 - 云水禅心的日志 - 网易博客.webarchive in Resources */,
 				0BDF6C531E9DB58800F25A93 /* Main.storyboard in Resources */,
 				0B4261861E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */,
 				0B3F84D41EA0D50B00542E51 /* 让CoreData更简单些 - 简书.webarchive in Resources */,
@@ -510,7 +518,6 @@
 				0B3F84D91EA0D50B00542E51 /* CoreData 从入门到精通（五）CoreData 和 TableView 结合 - 简书.webarchive in Resources */,
 				0B4261801E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive in Resources */,
 				0B42617A1E9F1EB400C959CE /* CoreData 从入门到精通（六）模型版本和数据迁移 - 简书.webarchive in Resources */,
-				0B3F84D61EA0D50B00542E51 /* com.QianHaiLDY.zucheStaff 2017-04-14 14:24.53.393.xcappdata in Resources */,
 				0B425F971E9F031800C959CE /* 1、认识CoreData-基础使用 - 简书.webarchive in Resources */,
 				0B4261831E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive in Resources */,
 			);
@@ -561,6 +568,7 @@
 				0BDF6C4D1E9DB58800F25A93 /* AppDelegate.m in Sources */,
 				0B4261641E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
 				0B4261671E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
+				0BE44E791EA46FBB00AAB452 /* FetchDataController.m in Sources */,
 				0B4261581E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
 				0B4261611E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
 				0B42616A1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
@@ -579,6 +587,7 @@
 			files = (
 				0B4261681E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0B42616B1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0BE44E7A1EA46FBB00AAB452 /* FetchDataController.m in Sources */,
 				0B4261501E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 				0B4261651E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
 				0B4261531E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
@@ -606,6 +615,7 @@
 				0B4261691E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0BDF6C711E9DB58800F25A93 /* CoreDataUITests.m in Sources */,
 				0B42616C1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
+				0BE44E7B1EA46FBB00AAB452 /* FetchDataController.m in Sources */,
 				0B4261571E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
 				0B4261541E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
 				0B42614B1E9F1E3100C959CE /* Teacher+CoreDataClass.m in Sources */,
