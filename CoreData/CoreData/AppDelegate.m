@@ -23,6 +23,8 @@
     UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:vc];
     [self.window setRootViewController:navc];
     [self.window makeKeyAndVisible];
+    
+//    kAppContext.persistentStoreCoordinator setAccessibilityActivationPoint:<#(CGPoint)#>
    
     return YES;
 }
@@ -61,12 +63,13 @@
 
 @synthesize persistentContainer = _persistentContainer;
 
-- (NSPersistentContainer *)persistentContainer {
+- (NSPersistentContainer *)persistentContainer {//如何做版本迁移？？？？--->设置renaming ID？
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"CoreData2"];//版本迁移
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"CoreData"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+                
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
                     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -79,7 +82,10 @@
                      * The store could not be migrated to the current model version.
                      Check the error message to determine what the actual problem was.
                     */
-                    NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+                    
+                   NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+                    NSLog(@"%@",_persistentContainer.persistentStoreDescriptions);
+                    
                     abort();
                 }
             }];
@@ -130,8 +136,9 @@
         NSURL *domainUrl = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
         NSURL *sqliteUrl =[domainUrl URLByAppendingPathComponent:@"CoreData.sqlite"];
 //        添加数据库
+        NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,NSInferMappingModelAutomaticallyOption:@YES};//版本迁移
         NSError *error = nil;
-        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteUrl options:nil error:&error];
+        [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteUrl options:options error:&error];
         if (error) {
             NSLog(@"addPersistentStore error = %@",error);
         }

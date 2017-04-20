@@ -24,7 +24,11 @@
 4.2 批量查询
 4.3 条件查询
 4.4 多条件查询
-
+5、迁移
+5.1 轻量级
+    增加modleVersion -> 添加renameing ID -> 增加新属性或者修改类名
+5.2 Mapping Model
+    增加modleVersion(可以修改类名，但不要修改或增加属性，否则属性无法一一对应编译无法通过)-> 创建Mapping Model ->逐一指定source
 
 
 ????

@@ -16,6 +16,7 @@
 #import "Student+CoreDataClass.h"
 #import "FetchDataController.h"
 #import "UserInfo+CoreDataClass.h"
+#import "Student1+CoreDataClass.h"
 @interface ViewController ()
 
 @end
@@ -71,7 +72,11 @@
         
 //        [self asyc];
         
-        [self testVersion1];
+//        [self testVersion1];
+        
+//        [self testVersion2];
+        
+        
         
         
     } @catch (NSException *exception) {
@@ -85,6 +90,54 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(fetchData)];
     
+}
+//版本升级:更改实体名称名，增加属性
+-(void)testVersion2{
+    
+    /*
+    Student1 *st1 = [NSEntityDescription insertNewObjectForEntityForName:@"Student1" inManagedObjectContext:kAppContext];
+    st1.name = @"新的stu";
+    st1.age = 18;
+    st1.addAttribute = @"addAttribute";
+    st1.classes = @"classes";
+    st1.icon = [UIImage imageNamed:@"icon3"];
+    if (kAppContext.hasChanges) {
+        [kAppDelegete saveContext];
+    }
+     */
+    
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Student1"];
+    NSError *error = nil;
+    NSArray<Student1 *>*stus = [kAppContext executeFetchRequest:fetchRequest error:&error];
+    if (error) {
+        NSLog(@"error=%@",error);
+    }else{
+        for (Student1 *stu in stus) {
+            NSLog(@"name=%@ addAttribute=%@",stu.name,stu.addAttribute);
+            /*
+            2017-04-20 15:07:11.408721 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.408801 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.408847 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.408889 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.408928 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.408969 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409032 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409110 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409155 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409231 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409310 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409369 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409527 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409585 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409658 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409713 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409755 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409828 CoreData[2652:680891] name=James addAttribute=(null)
+            2017-04-20 15:07:11.409890 CoreData[2652:680891] name=新的stu addAttribute=addAttribute
+             */
+            //--->迁移成功:旧数据没有丢失，新数据添加成功！
+        }
+    }
 }
 //版本升级:新增一个类（表）不用做版本迁移
 -(void)testVersion1{

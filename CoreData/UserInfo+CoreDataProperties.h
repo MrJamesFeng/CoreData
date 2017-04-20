@@ -2,7 +2,7 @@
 //  UserInfo+CoreDataProperties.h
 //  CoreData
 //
-//  Created by LDY on 17/4/17.
+//  Created by LDY on 17/4/20.
 //  Copyright © 2017年 LDY. All rights reserved.
 //
 
@@ -15,12 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<UserInfo *> *)fetchRequest;
 
+@property (nullable, nonatomic, copy) NSString *attrAdded;
+@property (nullable, nonatomic, copy) NSDate *birthday;
 @property (nullable, nonatomic, retain) NSObject *icon;
 @property (nullable, nonatomic, copy) NSString *title;
-@property (nullable, nonatomic, copy) NSDate *birthday;
-
-@property(nonatomic,copy)NSString *attrAdded;//新增属性
-
 
 @end
 

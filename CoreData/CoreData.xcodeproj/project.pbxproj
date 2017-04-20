@@ -82,6 +82,18 @@
 		0B4261861E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
 		0B4261871E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
 		0B4261881E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */; };
+		0B9E601D1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E601C1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m */; };
+		0B9E601E1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E601C1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m */; };
+		0B9E601F1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E601C1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m */; };
+		0B9E602F1EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602C1EA8934700332DA6 /* Student1+CoreDataClass.m */; };
+		0B9E60301EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602C1EA8934700332DA6 /* Student1+CoreDataClass.m */; };
+		0B9E60311EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602C1EA8934700332DA6 /* Student1+CoreDataClass.m */; };
+		0B9E60321EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602E1EA8934700332DA6 /* Student1+CoreDataProperties.m */; };
+		0B9E60331EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602E1EA8934700332DA6 /* Student1+CoreDataProperties.m */; };
+		0B9E60341EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E602E1EA8934700332DA6 /* Student1+CoreDataProperties.m */; };
+		0B9E606F1EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E606E1EA8B05600332DA6 /* mappingModel1.xcmappingmodel */; };
+		0B9E60701EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E606E1EA8B05600332DA6 /* mappingModel1.xcmappingmodel */; };
+		0B9E60711EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E606E1EA8B05600332DA6 /* mappingModel1.xcmappingmodel */; };
 		0BDF6C4A1E9DB58800F25A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C491E9DB58800F25A93 /* main.m */; };
 		0BDF6C4D1E9DB58800F25A93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C4C1E9DB58800F25A93 /* AppDelegate.m */; };
 		0BDF6C501E9DB58800F25A93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF6C4F1E9DB58800F25A93 /* ViewController.m */; };
@@ -173,6 +185,15 @@
 		0B4261711E9F1EB400C959CE /* duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "duplicate symbol _OBJC_CLASS_$_Base64 in: - 简书.webarchive"; sourceTree = "<group>"; };
 		0B4261721E9F1EB400C959CE /* ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ios - Duplicate symbol error when adding NSManagedObject subclass, duplicate link - Stack Overflow.webarchive"; sourceTree = "<group>"; };
 		0B4261731E9F1EB400C959CE /* Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Xcode8 使用CoreData生成对象文件出现编译错误解决方案 - 简书.webarchive"; sourceTree = "<group>"; };
+		0B9E601B1EA8924E00332DA6 /* UserInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UserInfo+CoreDataProperties.h"; path = "../../UserInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B9E601C1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UserInfo+CoreDataProperties.m"; path = "../../UserInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B9E60201EA892B800332DA6 /* CoreData 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData 3.xcdatamodel"; sourceTree = "<group>"; };
+		0B9E602B1EA8934700332DA6 /* Student1+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student1+CoreDataClass.h"; path = "../../Student1+CoreDataClass.h"; sourceTree = "<group>"; };
+		0B9E602C1EA8934700332DA6 /* Student1+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student1+CoreDataClass.m"; path = "../../Student1+CoreDataClass.m"; sourceTree = "<group>"; };
+		0B9E602D1EA8934700332DA6 /* Student1+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student1+CoreDataProperties.h"; path = "../../Student1+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0B9E602E1EA8934700332DA6 /* Student1+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student1+CoreDataProperties.m"; path = "../../Student1+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0B9E60351EA896D500332DA6 /* CoreData 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData 4.xcdatamodel"; sourceTree = "<group>"; };
+		0B9E606E1EA8B05600332DA6 /* mappingModel1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = mappingModel1.xcmappingmodel; sourceTree = "<group>"; };
 		0BDF6C451E9DB58800F25A93 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDF6C491E9DB58800F25A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0BDF6C4B1E9DB58800F25A93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +334,7 @@
 				0BDF6C8A1E9DCFEF00F25A93 /* PrefixHeader.pch */,
 				0BE44E771EA46FBB00AAB452 /* FetchDataController.h */,
 				0BE44E781EA46FBB00AAB452 /* FetchDataController.m */,
+				0B9E606E1EA8B05600332DA6 /* mappingModel1.xcmappingmodel */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -364,6 +386,12 @@
 		0BDF6C821E9DB8B400F25A93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B9E602B1EA8934700332DA6 /* Student1+CoreDataClass.h */,
+				0B9E602C1EA8934700332DA6 /* Student1+CoreDataClass.m */,
+				0B9E602D1EA8934700332DA6 /* Student1+CoreDataProperties.h */,
+				0B9E602E1EA8934700332DA6 /* Student1+CoreDataProperties.m */,
+				0B9E601B1EA8924E00332DA6 /* UserInfo+CoreDataProperties.h */,
+				0B9E601C1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m */,
 				0BE44E831EA4C13A00AAB452 /* UserInfo+CoreDataClass.h */,
 				0BE44E841EA4C13A00AAB452 /* UserInfo+CoreDataClass.m */,
 				0BE44E851EA4C13A00AAB452 /* UserInfo+CoreDataProperties.h */,
@@ -575,18 +603,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9E601D1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */,
+				0B9E60321EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */,
 				0B1933441E9F9AD600C8061B /* CoreData.xcdatamodeld in Sources */,
 				0BDF6C501E9DB58800F25A93 /* ViewController.m in Sources */,
 				0BDF6C851E9DB8D700F25A93 /* Person.m in Sources */,
 				0B42614C1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
 				0B4261521E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
 				0BDF6C4D1E9DB58800F25A93 /* AppDelegate.m in Sources */,
+				0B9E606F1EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */,
 				0B4261641E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
 				0B4261671E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0BE44E791EA46FBB00AAB452 /* FetchDataController.m in Sources */,
 				0BE44E871EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */,
 				0B4261581E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
 				0B4261611E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
+				0B9E602F1EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */,
 				0B42616A1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
 				0B4261551E9F1E3100C959CE /* ClassRoom+CoreDataClass.m in Sources */,
 				0B42615E1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
@@ -602,15 +634,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9E601E1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */,
 				0BE44E8B1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */,
 				0B4261681E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
 				0B42616B1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
 				0BE44E881EA4C13A00AAB452 /* UserInfo+CoreDataClass.m in Sources */,
 				0BE44E7A1EA46FBB00AAB452 /* FetchDataController.m in Sources */,
+				0B9E60301EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */,
 				0B4261501E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 				0B4261651E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
 				0B4261531E9F1E3100C959CE /* Headmaster+CoreDataProperties.m in Sources */,
 				0BDF6C861E9DB8D700F25A93 /* Person.m in Sources */,
+				0B9E60331EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */,
 				0B42615F1E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
 				0B4261621E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
 				0B42615C1E9F1E3100C959CE /* Grades+CoreDataClass.m in Sources */,
@@ -619,6 +654,7 @@
 				0B42614D1E9F1E3100C959CE /* Teacher+CoreDataProperties.m in Sources */,
 				0B4260211E9F164D00C959CE /* CoreData.xcdatamodeld in Sources */,
 				0B4261591E9F1E3100C959CE /* ClassRoom+CoreDataProperties.m in Sources */,
+				0B9E60701EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,12 +663,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE44E8C1EA4C13A00AAB452 /* UserInfo+CoreDataProperties.m in Sources */,
+				0B9E60341EA8934700332DA6 /* Student1+CoreDataProperties.m in Sources */,
 				0BDF6C871E9DB8D700F25A93 /* Person.m in Sources */,
 				0B4261631E9F1E3100C959CE /* Student+CoreDataClass.m in Sources */,
+				0B9E60311EA8934700332DA6 /* Student1+CoreDataClass.m in Sources */,
 				0B4261661E9F1E3100C959CE /* Student+CoreDataProperties.m in Sources */,
+				0B9E601F1EA8924E00332DA6 /* UserInfo+CoreDataProperties.m in Sources */,
 				0B4261511E9F1E3100C959CE /* Headmaster+CoreDataClass.m in Sources */,
 				0B4261601E9F1E3100C959CE /* Grades+CoreDataProperties.m in Sources */,
 				0B4261691E9F1E3100C959CE /* School+CoreDataClass.m in Sources */,
+				0B9E60711EA8B05600332DA6 /* mappingModel1.xcmappingmodel in Sources */,
 				0BDF6C711E9DB58800F25A93 /* CoreDataUITests.m in Sources */,
 				0B42616C1E9F1E3100C959CE /* School+CoreDataProperties.m in Sources */,
 				0BE44E7B1EA46FBB00AAB452 /* FetchDataController.m in Sources */,
@@ -893,10 +933,12 @@
 		0BDF6C541E9DB58800F25A93 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0B9E60351EA896D500332DA6 /* CoreData 4.xcdatamodel */,
+				0B9E60201EA892B800332DA6 /* CoreData 3.xcdatamodel */,
 				0BE44E911EA4C98300AAB452 /* CoreData2.xcdatamodel */,
 				0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */,
 			);
-			currentVersion = 0BDF6C551E9DB58800F25A93 /* CoreData.xcdatamodel */;
+			currentVersion = 0B9E60351EA896D500332DA6 /* CoreData 4.xcdatamodel */;
 			path = CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

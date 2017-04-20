@@ -2,7 +2,7 @@
 //  UserInfo+CoreDataProperties.m
 //  CoreData
 //
-//  Created by LDY on 17/4/17.
+//  Created by LDY on 17/4/20.
 //  Copyright © 2017年 LDY. All rights reserved.
 //
 
@@ -14,9 +14,9 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"UserInfo"];
 }
 
+@dynamic attrAdded;
+@dynamic birthday;
 @dynamic icon;
 @dynamic title;
-@dynamic birthday;
-@dynamic attrAdded;//新增
 
 @end

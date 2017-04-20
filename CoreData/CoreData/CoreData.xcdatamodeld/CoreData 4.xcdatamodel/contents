@@ -3,7 +3,7 @@
     <entity name="ClassRoom" representedClassName="ClassRoom" syncable="YES">
         <attribute name="no" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="classToheadmaster" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Headmaster" inverseName="headmasterToclass" inverseEntity="Headmaster" syncable="YES"/>
-        <relationship name="classToStudent" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Student" inverseName="studentToClass" inverseEntity="Student" syncable="YES"/>
+        <relationship name="classToStudent" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Student1" inverseName="studentToClass" inverseEntity="Student1" syncable="YES"/>
         <relationship name="classToTeacher" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Teacher" inverseName="teacherToClass" inverseEntity="Teacher" syncable="YES"/>
     </entity>
     <entity name="Grades" representedClassName="Grades" elementID="no" syncable="YES">
@@ -20,14 +20,15 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="shcoolToGrad" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Grades" inverseName="gradeToSchool" inverseEntity="Grades" syncable="YES"/>
     </entity>
-    <entity name="Student" representedClassName="Student" syncable="YES">
+    <entity name="Student1" representedClassName="Student1" elementID="Student" syncable="YES">
+        <attribute name="addAttribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="classes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="icon" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="studentToClass" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ClassRoom" inverseName="classToStudent" inverseEntity="ClassRoom" syncable="YES"/>
         <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
-            <fetchRequest name="fetchedPropertyFetchRequest" entity="Student"/>
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Student1"/>
         </fetchedProperty>
     </entity>
     <entity name="Teacher" representedClassName="Teacher" syncable="YES">
@@ -39,7 +40,6 @@
         <attribute name="attrAdded" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="icon" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <fetchRequest name="school" entity="School" predicateString="name CONTAINS &quot;Qing&quot;"/>
     <configuration name="HomePage"/>
@@ -48,9 +48,9 @@
         <element name="ClassRoom" positionX="270" positionY="318" width="128" height="105"/>
         <element name="Grades" positionX="216" positionY="38" width="128" height="90"/>
         <element name="Headmaster" positionX="252" positionY="162" width="128" height="90"/>
-        <element name="School" positionX="252" positionY="-90" width="128" height="73"/>
-        <element name="Student" positionX="466" positionY="444" width="128" height="149"/>
+        <element name="School" positionX="252" positionY="-90" width="128" height="75"/>
+        <element name="Student1" positionX="466" positionY="444" width="128" height="164"/>
         <element name="Teacher" positionX="63" positionY="468" width="128" height="90"/>
-        <element name="UserInfo" positionX="270" positionY="72" width="128" height="105"/>
+        <element name="UserInfo" positionX="270" positionY="72" width="128" height="90"/>
     </elements>
 </model>
